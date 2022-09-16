@@ -1,8 +1,19 @@
-import { render, screen } from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+afterEach(cleanup);
+
+describe("Tip calculator app", () => {
+
+  test('renders page title', () => {
+    render(<App />);
+    const pageTitle = screen.getByText(/tip calculator/i);
+    expect(pageTitle).toBeInTheDocument();
+  });
+
+  test('renders reset button', () => {
+    render(<App />);
+    const text = screen.getByText(/reset/i);
+    expect(text).toBeInTheDocument();
+  });
 });
