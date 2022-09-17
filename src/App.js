@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import TipCalculator from './TipCalculator';
-import GreetMachine from './GreetMachine';
+import TipCalculator from './Component/TipCalculator'
+import GreetMachine from './Component/GreetMachine';
 
 function App() {
 
