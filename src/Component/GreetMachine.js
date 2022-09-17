@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// A program to take user's name and greet the user,
+// A component to take user's name and greet the user,
 // it can greet multiple users
 const GreetMachine = () => {
     // State variable getting and setting the user's name
@@ -49,7 +49,7 @@ const GreetMachine = () => {
             <h1>Greet Machine</h1>
             <form>
                 <label style={{ display: "block" }} htmlFor="username">What is your name?</label>
-                <input id="username" type="text" autoComplete="off" value={name} onInput={updateName} />
+                <input id="username" type="text" value={name} onInput={updateName} />
                 <br />
                 <button onClick={submitName}>Submit</button>
                 <button onClick={resetGreeter}>Reset</button>

@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import TipCalculator from './Component/TipCalculator'
 import GreetMachine from './Component/GreetMachine';
+import GreetMachineV2 from './Component/GreetMachineV2';
 
 function App() {
 
@@ -10,6 +11,8 @@ function App() {
       <TipCalculator />
       <hr/>
       <GreetMachine />
+      <hr/>
+      <GreetMachineV2 />
     </div>
   );
 }

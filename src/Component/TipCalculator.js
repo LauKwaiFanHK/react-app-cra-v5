@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+// A component to calculate tip from a bill amount and display
+// results to user
 const TipCalculator = () => {
     // State variable to get and set bill amount
     const [billAmount, setBillAmount] = useState(0);
